@@ -1,2 +1,2 @@
 # devops_essentials
-Some info about tools used in devops and its essentials configuring files 
+what I intent to do with this files is to get the idea of installation and configuration of some of the tools used in devops. 
