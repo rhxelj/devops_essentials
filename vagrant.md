@@ -1,17 +1,21 @@
-#Vagrant site
+#VAGRANT
+
+>Vagrant provides easy to configure, reproducible, and portable work environments built on top of industry-standard technology and >controlled by a single consistent workflow to help maximize the productivity and flexibility of you and your team.
+>
+>To achieve its magic, Vagrant stands on the shoulders of giants. Machines are provisioned on top of VirtualBox, VMware, AWS, or any >other provider. Then, industry-standard provisioning tools such as shell scripts, Chef, or Puppet, can be used to automatically install >and configure software on the machine.
+
+
+#LINKS 
+Oficial site 
 https://www.vagrantup.com
-there is a full description of how to configure and use vagrant in https://www.vagrantup.com/docs/
+there is a full description of how to configure and use vagrant in 
+https://www.vagrantup.com/docs/
 
 To install run from a terminal
 
 ```$apt-get install vagrant```
-       
-
-**basic configuration file**
-
-vagrantfile
-
-The first step in configuring any Vagrant project is to create a *vagrantfile*
+   
+After installing vagrant the first step in configuring any Vagrant project is to create a *vagrantfile* (main configuration file)
 
     $ mkdir vagrant_directory
     $ cd vagrant_directory
