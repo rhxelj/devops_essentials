@@ -2,6 +2,11 @@
 https://www.vagrantup.com
 there is a full description of how to configure and use vagrant in https://www.vagrantup.com/docs/
 
+To install run from a terminal
+
+```$apt-get install vagrant```
+       
+
 **basic configuration file**
 
 vagrantfile
