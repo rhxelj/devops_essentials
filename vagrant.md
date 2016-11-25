@@ -39,5 +39,22 @@ Vagrant.configure("2") do |config|
   config.vm.box_url = "http://files.vagrantup.com/precise64.box"
 end
 ```
+Now we have to boot our Vagrant environment. Run the following from your terminal:
+
+    $ vagrant up
+
+now you can interact with the new amchine using SSH to ge into the machine:
+
+    $ vagrant ssh
+
+now you can interact with the machine and do whatever you want. but be careful about rm -rf /, becuase Vagrant shares a directory at /vagrant with the directory on the host containing your Vagrantfile.
+To finish the session you can use CTRL+D.
+
+    vagrant@precise64:~$ logout
+    Connection to 127.0.0.1 closed.
+
+When you finish your test you canrun vagrant destroy back on your host machine, and Vagrant will terminate the use of any resources by the virtual machine.
+
+The vagrant destroy command does not actually remove the downloaded box file. To completely remove the box file, you can use the vagrant box remove command.
 
 
