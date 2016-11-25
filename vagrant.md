@@ -66,4 +66,29 @@ When you finish your test you canrun vagrant destroy back on your host machine, 
 
 The vagrant destroy command does not actually remove the downloaded box file. To completely remove the box file, you can use the vagrant box remove command.
 
+I wan to try multiple machine so I modified my Vagrant file as follow
+
+```
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+# edited By rhxlej
+
+Vagrant.configure("2") do |config|
+
+# My SERVER1
+  config.vm.define "server1" do |server1|
+    server1.vm.box = "ubuntu/trusty32"
+    server1.vm.hostname = 'server1'
+    #server1.vm.box_url = "ubuntu/trusty32"
+    #server1.vm.network :private_network, ip: "192.168.56.201"
+  end
+# My SERVER2
+  config.vm.define "server2" do |server2|
+    server2.vm.box = "ubuntu/trusty32"
+    server2.vm.hostname = 'server2'
+    #server2.vm.box_url = "ubuntu/trusty32"
+    #server2.vm.network :private_network, ip: "192.168.56.202"
+  end
+end
+```
 
