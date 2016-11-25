@@ -21,6 +21,7 @@ Add EPEL repository or RHN Extra channel
 
 I add two lines here 
 >dns_alt_names = puppet,puppet.mydomain.com  #here I put the name and alias of my puppet server
+
 >certname = puppet
 
 now I generate the certificate from the master node
